@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    user-select: none;
+
+}
+.contact{
+    background-color: #333;
+    margin-bottom: 100px;
+}
+.text{
+    margin: auto;
+    width:80%;
+    height: 20px;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    
+    
+}
+.clear{
+    clear: both;
+}
+h1,h2,h3, h4,h5,h6{
+    font-family: 'montserrat',sans-serif;
+    
+}
+.Header{
+    background-color: #333;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    
+    z-index: 10;
+    
+}
+.Header .logo{
+    width:50%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+    float: left;
+}
+.Header .nav{
+    
+    text-align: right;
+    float: left;
+    width: 50%;
+    
+    
+}
+.Head_Content{
+    
+    
+    
+}
+.Header .nav > li{
+    list-style: none;
+    display: inline-block;
+    top:10px;
+    
+    
+    
+}
+.Header .nav > li a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    padding-top: 15px;
+    
+
+
+
+}
+.Header .nav > li a.active:after{
+    content: "";
+    display: block;
+    width:100%;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.5s;
+    
+}
+.Header .nav > li a:after{
+    margin-top: 2px;
+    content: "";
+    display: block;
+    width:0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.5s;
+    
+}
+.Header .nav li a:hover:after{
+    
+    width:100%;
+    
+    
+    
+}
+.home{
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../pang-yuhao-8z0UI6IDCHY-unsplash.jpg);
+    height: 100vh;
+    
+    
+}
+.Home_Content{
+    width:65%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    
+}
+.overly{
+    background: rgb(0,0,0,0.4) ;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.Btn1{
+    transition: 0,5s;
+
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    width: 200px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px white solid;
+}
+.Btn2{
+    transition: 0,5s;
+
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    width: 200px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px #0062ff solid;
+}
+
+.btn-opacity{
+    transition: opacity 0.5s;
+}
+.btn-opacity:hover{
+    opacity: 0.8;
+}
+.section-header{
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.section-header .line{
+    
+    display: block;
+    margin: 0 auto 70px auto;
+    height: 4.5px;
+    width: 70px;
+    background-color: #0062ff;
+}
+.pd-y{
+    padding: 120px 0px;
+}
+.about{
+    margin-bottom: 200px;
+    
+}
+.about-content{
+    overflow: hidden;
+}
+.about-item{
+    transition: color 1s;
+    text-align: center;
+    width:30%;
+    float: left;
+    border:solid 1px #e8e8e8;
+    padding: 50px 20px;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item .icon{
+    color: #0062ff;
+    margin-bottom: 10px;
+    
+}
+.item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: bolder; 
+
+
+}
+.item-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.about-link{
+    color: #0062ff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.about-link:hover{
+    color: #d63333;
+    font-weight: bold;
+    
+}
+.ltreff{
+    position: relative;
+    
+}
+.ltreff:after{
+    position: absolute;
+    content: "";
+    width:0%;
+    background-color: #333;
+    top:0;
+    left: 0;
+    transition: width 0.5s;
+    z-index: -1;
+    
+}
+.ltreff:hover:after{
+    width:100%;
+    height: 100%;
+}
+.about-item:hover{
+    color: white;
+}
+.services{
+    height: 800px;
+    background-color: #f9f9f9;
+}
+.perfume-content{
+    
+    background-color: #f9f9f9;
+    overflow: hidden;
+    
+}
+.perfume-item{
+    width:30%;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    
+    
+    
+}
+.perfume-item .leyer-content{
+    border-radius: 40px; 
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    
+    
+}
+.perfume-item:hover .leyer-content{
+    opacity: 1;
+    visibility: visible;
+}
+.perfume-item img{
+    width:100%;
+}
+.perfume-item.mg{
+    margin: 0 5%;
+    
+}
+.leyer-content .layer-info{
+    position: absolute;
+    transition: padding 1s;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%,-50%);
+    width:60%;
+    text-align: center;
+}
+.leyer-content .que{
+    color: #528ff2; 
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.leyer-content .layer-title{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    transition: padding 0.9s;
+    
+}
+
+.leyer-content a{
+    color: white;
+    padding-top: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background-color:#528ff2;
+    transition: padding 0.8s;
+    
+
+
+}
+.leyer-content a i{
+    
+    
+    line-height: 50px;
+}
+.leyer-content a:hover{
+    color: #528ff2;
+    padding-top: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background-color: white; 
+    
+
+
+}
+#igf{
+    border-radius: 40px;
+}
+.dropdown{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    
+}
+
+.leyer-content:hover  .layer-info{
+    padding-bottom: 50px;
+}
+.que{
+    transition: padding 0.6s;
+}
+
